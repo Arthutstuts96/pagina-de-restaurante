@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kurale&family=Lavishly+Yours&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+html, body{
+    height: 100%;
+}
+/* HEADER  */
+.cabecalho{
+    background-color: #c3c3c3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.cabecalho__perfil{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cabecalho__logo{
+    font-family: "Lavishly Yours", sans-serif;
+    font-size: 40px;
+}
+.botao-sidebar{
+    background: transparent;
+    position: relative;
+    border: none;
+    left: 12px;
+}
+.botao-sidebar:hover{
+    cursor: pointer;
+}
+#icone-3-barras{
+    transform: scale(1.75);
+}
+.foto__perfil{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 5px;
+}
+/* SIDEBAR  */
+.sidebar{
+    background-color: #123456;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 110px;
+}
+#icone-restaurante{
+    font-size: 60px;
+    padding-top: 30px;
+}
+.sidebar__navegacao{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+    list-style: square;
+    padding-left: 15px;
+    font-family: 'Kurale', Arial, sans-serif;
+}
+.links__navegacao{
+    color: #fff;
+    text-decoration: none;
+}
+/* MAIN  */
+main{
+    display: flex;
+    height: 100%;
+    gap: 5px;
+    overflow-y: auto;
+}
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.saudacao-inicial{
+    font-family: "La Belle Aurore", Arial, sans-serif;
+    font-size: 40px;
+    padding: 60px 0;
+    white-space: nowrap;
+}
+.opcoes-comida{
+    margin-top: 60px;
+}
+.cardapio__opcoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 120px 50px;
+    padding: 12px;
+}
+.comida{
+    display: flex;
+}
+.imagem__comida{
+    width: 240px;
+    height: 240px;
+    border-radius: 10px;
+}
+.descricao__comida{
+    font-family: 'Kurale', sans-serif;
+    width: 120px;
+    padding: 12px;
+}
+.botao__adicionar__comida{
+    background-color: #c3c3c3;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;  
+    border: none;
+    cursor: pointer;
+}
+.botao__adicionar__comida:hover{
+    background-color: #a3a3a3;
+}
+.simbolo-mais{
+    font-size: 75px;
+    color: #123456;
+}
+/* CAIXA DE FORMULÁRIO  */
+.formulario{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #b6b6b6;
+    border-radius: 10px;
+}
+.formulario__preencher{
+    display: grid;
+    flex-direction: column;
+    padding: 30px 40px 75px 40px;
+}
+.texto__adicione{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+.inputs{
+    padding: 10px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 6px;
+}
+.botoes-formulario{
+    justify-self: flex-end;
+    display: flex;
+    gap: 20px;
+}
+.botao-formulario{
+    font-family: 'Kurale', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+.botao-formulario:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.botao__cancelar{
+    background: transparent;
+    border: none;
+}
+.botao__submit{
+    justify-self: flex-end;
+    width: 75px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+}
+/* EXTRAS  */
+.escondido{
+    display: none;
+}

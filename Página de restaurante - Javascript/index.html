@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Reset css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" 
+    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Restaurante XZ</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <button class="botao-sidebar">
+            <i class="fa-solid fa-bars" id="icone-3-barras"></i>
+        </button>
+        <h1 class="cabecalho__logo">Sabor Privilegiado</h1>
+        <img class="foto__perfil" src="./imagens/perfil.jpg" alt="Foto de perfil" width="50">
+    </header>
+    <main>
+        <aside class="sidebar">
+            <i class="fa-solid fa-utensils" id="icone-restaurante"></i>
+            <ul class="sidebar__navegacao">
+                <li class="itens__navegacao"><a href="#" class="links__navegacao">Home</a></li>
+                <li class="itens__navegacao"><a href="#" class="links__navegacao">Pedidos</a></li>
+                <li class="itens__navegacao"><a href="#" class="links__navegacao">Contato</a></li>
+                <li class="itens__navegacao"><a href="#" class="links__navegacao">Ajuda</a></li>
+                <li class="itens__navegacao"><a href="#" class="links__navegacao">Sobre</a></li>
+            </ul>
+        </aside>
+        <section class="conteudo-principal">
+            <div class="saudacao-inicial">
+                <h1>O que você deseja?</h1>
+            </div>
+            <section class="opcoes-comida">
+                <ul class="cardapio__opcoes">
+                    <li class="comida">
+                        <img src="./imagens/pizza.jpg" alt="Foto de uma pizza" class="imagem__comida">
+                        <div class="descricao__comida">
+                            <p class="nome__descricao">Pizza de frango e requeijão</p><hr>
+                            <p class="preco__descricao">R$69,00</p>
+                        </div>
+                    </li>
+                    <li class="comida">
+                        <img src="./imagens/torrada.jpg" alt="Foto da torrada com mirtilos" class="imagem__comida">
+                        <div class="descricao__comida">
+                            <p class="nome__descricao">Torrada com mirtilos</p><hr>
+                            <p class="preco__descricao">R$19,00</p>
+                        </div>
+                    </li>
+                    <li class="comida">
+                        <img src="./imagens/comida-oriental.jpg" alt="Foto da comida oriental" class="imagem__comida">
+                        <div class="descricao__comida">
+                            <p class="nome__descricao">Dimsum oriental</p><hr>
+                            <p class="preco__descricao">R$40,00</p>
+                        </div>
+                    </li>
+                    <li class="comida">
+                        <img src="./imagens/salada.jpg" alt="Foto de uma salada" class="imagem__comida">
+                        <div class="descricao__comida">
+                            <p class="nome__descricao">Salada verde</p><hr>
+                            <p class="preco__descricao">R$26,50</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <button class="botao__adicionar__comida">
+            <span class="simbolo-mais">+</span>
+        </button>
+    </main>
+
+    <section class="formulario escondido">
+        <form action="index.html" class="formulario__preencher">
+            <p class="texto__adicione">Adicione seu prato aqui!</p>
+            <label for="nome">Nome do prato:</label>
+            <input type="text" id="nome" class="inputs input__texto" required>
+            <label for="preco">Preço do prato:</label>
+            <input type="number" id="preco" min="0" class="inputs input__texto" required>
+            <label for="imagem">Imagem(insira o link da imagem neste campo):</label>
+            <input type="text" id="imagem" class="inputs input__imagem" >
+            <div class="botoes-formulario">
+                <button class="botao-formulario botao__cancelar">Cancelar</button>
+                <button type="submit" class="botao-formulario botao__submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+    
+    <script src="./app/main.js"></script>
+    <script src="./app/formulario.js"></script>
+</body>
+</html>
